@@ -1,0 +1,638 @@
+:root {
+    scroll-behavior: smooth;
+    --theme-color: #0d0f80;
+    --theme-color-light: #fff;
+    --theme-color-transparent: #1a3ba791;
+    --theme-color-transparent2: #6abff091;
+
+    --color-text-light: #018BFF;
+    --color-text-ultralight: #37d7ff;
+    --color-text-dark: #3d3c4e;
+
+    --box-shadow: #21242c80;
+
+    --text-type: 'Great Vibes', cursive;
+    --text-type2: 'Roboto Serif', sans-serif;
+
+
+
+    --letter-color-1: #3b0099;
+    --letter-color-2: #2f00ff;
+    --letter-color-3: #1619be;
+    --letter-color-4: #00aeff;
+    --letter-color-5: #00ffff;
+    --letter-color-6: #00ffbf;
+}
+
+
+
+
+.body {
+    font-family: var(--text-type2);
+}
+
+
+/* ESTILOS HEADER*/
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 0.25rem 0.25rem 0 var(--box-shadow);
+    background-color: var(--theme-color-light);
+
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1024px;
+    height: 4rem;
+    padding: 0 2rem;
+    margin: auto;
+}
+
+.header-nav__link-logo-container {
+    height: 3rem;
+}
+
+.header-nav__link-logo {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.header-nav__menu-icon {
+    font-size: 2rem;
+    color: var(--color-text-ultralight);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.header-nav__menu-icon:hover {
+    font-size: 2.5rem;
+    filter: brightness(250%);
+}
+
+.header-nav__menu-checkbox {
+    display: none;
+}
+
+.header-nav__menu-checkbox:checked+.header-nav__link-list {
+    left: 0;
+}
+
+.header-nav__link-list {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 4rem;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme-color);
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s;
+}
+
+
+.header-nav__link-item {
+    list-style: none;
+}
+
+.header-nav__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--theme-color-light);
+    transition: all 0.25s;
+}
+
+.header-nav__link:hover {
+    color: var(--color-text-ultralight);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ESTILOS MAIN-PRESENTACION*/
+
+
+/* presentacion */
+
+.main__presentation-background {
+    background-size: cover;
+    background-image: url("/img/portada.jpg");
+}
+
+.main__presentation-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(0, auto);
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--theme-color-transparent);
+
+}
+
+.main__presentation-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.main__presentation-title,
+.main__presentation-description {
+    margin: 0;
+}
+
+.main__presentation-title {
+    color: var(--color-text-ultralight);
+    font-size: 1.75rem;
+}
+
+.main__presentation-description {
+    color: var(--theme-color-light);
+    font-size: 1rem;
+}
+
+.main__presentation-img-container {
+    width: 15rem;
+}
+
+.main__presentation-img {
+    width: 100%;
+}
+
+.main__presentation-contacto-link {
+    background-color: var(--theme-color);
+    border: 0.1rem solid var(--theme-color);
+    padding: .75rem 2rem;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    color: var(--color-text-ultralight);
+    transition: all 0.5s;
+}
+
+.main__presentation-contacto-link:hover {
+    border: 0.1rem solid var(--color-text-light);
+    background-color: var(--color-text-light);
+}
+
+
+
+
+
+
+
+/* servicios */
+
+.main__services-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 0 3rem;
+    list-style: none;
+    text-align: center;
+
+}
+
+.main__services-item {
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: 0 0 0 0.15rem var(--color-text-dark), 0 0 0 0.25rem var(--color-text-dark);
+}
+
+.main__services-item:hover {
+    box-shadow: 0 0 0 0.25rem var(--color-text-light), 0 0 0 0.5rem var(--color-text-ultralight);
+}
+
+.--icon {
+    font-size: 2.5rem;
+    color: var(--color-text-light);
+}
+
+.main__services-subtitle {
+    font-size: 2.25rem;
+    font-family: var(--text-type);
+}
+
+.main__services-description {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+
+
+
+
+/* catalogo */
+
+
+.main__catalogue-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 3rem;
+    animation: 5seg;
+}
+
+.--imgphoto {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.main__catalogue-photography11 {
+    grid-column: -3/-1;
+}
+
+.main__catalogue-container>div :hover {
+    transform: scale(1, 1.1);
+    box-shadow: 0 0 0.5rem var(--color-text-light) ;
+}
+
+.--secundaryphotos {
+    display: none;
+}
+
+
+
+
+/* informacion */
+
+.main__information-cantainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.main__information-nosotros,
+.main__information-objetivo,
+.main__information-ubicacion {
+    border-radius: 1rem;
+    box-shadow: 0 0 0 0.15rem var(--color-text-dark), 0 0 0 0.25rem var(--color-text-light);
+}
+
+.main__information-ubicacion {
+    display: none;
+    justify-content: center;
+}
+
+.main__information-nosotros-title,
+.main__information-objetivo-title,
+.main__information-ubicacion {
+    font-family: var(--text-type);
+    font-size: 2.25rem;
+}
+
+
+
+
+
+
+/* extra */
+
+
+.main__extra {
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.main__extra-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18rem;
+    background-image: url(../img/extramage.png);
+    background-color: var(--theme-color-transparent2);
+}
+
+
+/* animacion */
+@keyframes zoom {
+    to {
+        transform: scale(1);
+    }
+
+    from {
+        transform: scale(1.1);
+    }
+}
+
+
+.main__extra-name-container {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: var(--text-type2);
+    text-decoration: none;
+    padding: 0 2rem;
+    animation: zoom 2s alternate ease-in-out infinite;
+}
+
+.main__extra-name-letter {
+    position: relative;
+    transition: all 0.5s;
+
+}
+
+.main__extra-name-letter::before {
+    content: var(--letter);
+    position: absolute;
+    transform: scale(1, 1);
+    filter: blur(1rem);
+}
+
+.main__extra-name-letter::after {
+    content: var(--letter);
+    position: absolute;
+    top: 75%;
+    left: 0;
+    filter: blur(0.25rem);
+    transform: rotateX(120deg);
+}
+
+.main__extra-name-letter:hover {
+    filter: brightness(200%);
+}
+
+
+
+.main__extra-name-letter:nth-child(1) {
+    color: var(--letter-color-1);
+}
+
+.main__extra-name-letter:nth-child(2) {
+    color: var(--letter-color-2);
+}
+
+.main__extra-name-letter:nth-child(3) {
+    color: var(--letter-color-3);
+}
+
+.main__extra-name-letter:nth-child(4) {
+    color: var(--letter-color-4);
+}
+
+.main__extra-name-letter:nth-child(5) {
+    color: var(--letter-color-5);
+}
+
+.main__extra-name-letter:nth-child(6) {
+    color: var(--letter-color-6);
+}
+
+
+
+
+
+
+
+
+
+/*ESTILOS DEL FOOTER*/
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #000231;
+    color: var(--theme-color-light);  
+
+}
+
+.footer__comentario{
+    grid-column: 1/3;
+    padding: 1rem;
+}
+
+
+.footer-nav {
+    grid-row: 2/2 ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.footer-nav__link-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer-nav__link-item {
+    list-style: none;
+}
+
+.footer-nav__link {
+    display: flex;
+    width: 1.5rem;
+    transition: 0.25s all;
+}
+
+.footer-nav__link:hover {
+    filter: brightness(150%);
+    transform: scale(1.5);
+}
+
+.footer-nav__link-image {
+    width: 100%;
+}
+
+.footer-nav-title{
+    margin: 1rem;
+}
+.footer-logo-creator{
+    width: 5rem;
+    margin: .75rem;
+}
+.footer-logo-creator-img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+/*RESPONSIVE DESKTOP*/
+
+
+@media (min-width:850px) {
+
+    .header-nav__menu-icon {
+        display: none;
+    }
+
+    .header-nav__link-list {
+        position: static;
+        flex-direction: row;
+        width: auto;
+        background-color: inherit;
+    }
+
+    .header-nav__link {
+        font-size: 1.25rem;
+        color: var(--theme-color);
+    }
+
+
+
+    .--separator {
+        margin-top: 9rem;
+    }
+
+
+
+    .main__presentation-container {
+        grid-template-columns: repeat(7, 1fr);
+        grid-auto-rows: 42rem;
+
+    }
+
+    .main__presentation-info {
+        grid-column: 2/5;
+    }
+
+    .main__presentation-img {
+        grid-column: 5/7;
+    }
+
+    .main__presentation-title {
+        font-size: 2.25rem;
+    }
+
+    .main__presentation-description {
+        font-size: 1.25rem;
+    }
+
+
+    .main__services-items {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(20rem, auto);
+        padding: 2rem 7rem;
+    }
+
+
+
+
+    .--secundaryphotos {
+        display: block;
+    }
+
+    .main__catalogue-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem 7rem;
+    }
+
+    .main__catalogue-photography1 {
+        grid-row: 1/3;
+    }
+
+    .main__catalogue-photography6 {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+
+    .main__catalogue-photography11 {
+        grid-column: 3/3;
+    }
+
+
+
+    .main__information-cantainer {
+        width: auto;
+        padding: 7rem;
+        gap: 3rem;
+
+    }
+
+    .main__information-nosotros {
+        grid-column: 1/3;
+        border-radius: .5rem;
+        padding: 1rem;
+
+    }
+
+    .main__information-ubicacion {
+        display: block;
+    }
+
+    .main__extra-name-container {
+        gap: 2rem;
+        max-width: 1024px;
+        padding: 0;
+        font-size: 7rem;
+    }
+
+
+
+    .footer{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        text-align: center;
+        padding: 0 4rem;
+    
+    }
+    .footer__comentario{
+        grid-column: 1/2;
+    }
+    
+    .footer-nav {
+        grid-column: 2/3 ;
+        grid-row: 2/-2;
+    }
+
+    .footer-logo-creator{
+        grid-column: 3/4;
+        margin: auto;
+
+    }
+}
