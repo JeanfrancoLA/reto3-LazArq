@@ -425,6 +425,10 @@
 
 
 
+
+
+
+
 /*ESTILOS DEL FOOTER*/
 
 .footer{
@@ -492,3 +496,143 @@
 }
 
 
+
+
+
+
+
+
+/*RESPONSIVE DESKTOP*/
+
+
+@media (min-width:850px) {
+
+    .header-nav__menu-icon {
+        display: none;
+    }
+
+    .header-nav__link-list {
+        position: static;
+        flex-direction: row;
+        width: auto;
+        background-color: inherit;
+    }
+
+    .header-nav__link {
+        font-size: 1rem;
+        color: var(--theme-color);
+    }
+
+
+
+    .--separator {
+        margin-top: 9rem;
+    }
+
+
+
+    .main__presentation-container {
+        grid-template-columns: repeat(7, 1fr);
+        grid-auto-rows: 42rem;
+
+    }
+
+    .main__presentation-info {
+        grid-column: 2/5;
+    }
+
+    .main__presentation-img {
+        grid-column: 5/7;
+    }
+
+    .main__presentation-title {
+        font-size: 2.25rem;
+    }
+
+    .main__presentation-description {
+        font-size: 1.25rem;
+    }
+
+
+    .main__services-items {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(20rem, auto);
+        padding: 2rem 7rem;
+    }
+
+
+
+
+    .--secundaryphotos {
+        display: block;
+    }
+
+    .main__catalogue-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem 7rem;
+    }
+
+    .main__catalogue-photography1 {
+        grid-row: 1/3;
+    }
+
+    .main__catalogue-photography6 {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+
+    .main__catalogue-photography11 {
+        grid-column: 3/3;
+    }
+
+
+
+    .main__information-cantainer {
+        width: auto;
+        padding: 7rem;
+        gap: 3rem;
+
+    }
+
+    .main__information-nosotros {
+        grid-column: 1/3;
+        border-radius: .5rem;
+        padding: 1rem;
+
+    }
+
+    .main__information-ubicacion {
+        display: block;
+    }
+
+    .main__extra-name-container {
+        gap: 2rem;
+        max-width: 1024px;
+        padding: 0;
+        font-size: 7rem;
+    }
+
+
+
+    .footer{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        text-align: center;
+        padding: 0 4rem;
+    
+    }
+    .footer__comentario{
+        grid-column: 1/2;
+    }
+    
+    .footer-nav {
+        grid-column: 2/3 ;
+        grid-row: 2/-2;
+    }
+
+    .footer-logo-creator{
+        grid-column: 3/4;
+        margin: auto;
+
+    }
+}
