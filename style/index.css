@@ -1,0 +1,25 @@
+:root {
+    scroll-behavior: smooth;
+    --theme-color: #0d0f80;
+    --theme-color-light: #fff;
+    --theme-color-transparent: #1a3ba791;
+    --theme-color-transparent2: #6abff091;
+
+    --color-text-light: #018BFF;
+    --color-text-ultralight: #37d7ff;
+    --color-text-dark: #3d3c4e;
+
+    --box-shadow: #21242c80;
+
+    --text-type: 'Great Vibes', cursive;
+    --text-type2: 'Roboto Serif', sans-serif;
+
+
+
+    --letter-color-1: #3b0099;
+    --letter-color-2: #2f00ff;
+    --letter-color-3: #1619be;
+    --letter-color-4: #00aeff;
+    --letter-color-5: #00ffff;
+    --letter-color-6: #00ffbf;
+}
