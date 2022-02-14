@@ -286,3 +286,36 @@
 }
 
 
+
+
+/* informacion */
+
+.main__information-cantainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.main__information-nosotros,
+.main__information-objetivo,
+.main__information-ubicacion {
+    border-radius: 1rem;
+    box-shadow: 0 0 0 0.15rem var(--color-text-dark), 0 0 0 0.25rem var(--color-text-light);
+}
+
+.main__information-ubicacion {
+    display: none;
+    justify-content: center;
+}
+
+.main__information-nosotros-title,
+.main__information-objetivo-title,
+.main__information-ubicacion {
+    font-family: var(--text-type);
+    font-size: 2.25rem;
+}
+
