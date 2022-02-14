@@ -319,3 +319,93 @@
     font-size: 2.25rem;
 }
 
+
+
+
+
+
+/* extra */
+
+
+.main__extra {
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.main__extra-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18rem;
+    background-image: url(../img/extramage.png);
+    background-color: var(--theme-color-transparent2);
+}
+
+.main__extra-name-container {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: var(--text-type2);
+    text-decoration: none;
+    padding: 0 2rem;
+    animation: zoom 2s alternate ease-in-out infinite;
+}
+
+.main__extra-name-letter {
+    position: relative;
+    transition: all 0.5s;
+
+}
+
+.main__extra-name-letter::before {
+    content: var(--letter);
+    position: absolute;
+    transform: scale(1, 1);
+    filter: blur(1rem);
+}
+
+.main__extra-name-letter::after {
+    content: var(--letter);
+    position: absolute;
+    top: 75%;
+    left: 0;
+    filter: blur(0.25rem);
+    transform: rotateX(120deg);
+}
+
+.main__extra-name-letter:hover {
+    filter: brightness(200%);
+}
+
+
+
+.main__extra-name-letter:nth-child(1) {
+    color: var(--letter-color-1);
+}
+
+.main__extra-name-letter:nth-child(2) {
+    color: var(--letter-color-2);
+}
+
+.main__extra-name-letter:nth-child(3) {
+    color: var(--letter-color-3);
+}
+
+.main__extra-name-letter:nth-child(4) {
+    color: var(--letter-color-4);
+}
+
+.main__extra-name-letter:nth-child(5) {
+    color: var(--letter-color-5);
+}
+
+.main__extra-name-letter:nth-child(6) {
+    color: var(--letter-color-6);
+}
+
+
