@@ -345,6 +345,19 @@
     background-color: var(--theme-color-transparent2);
 }
 
+
+/* animacion */
+@keyframes zoom {
+    to {
+        transform: scale(1);
+    }
+
+    from {
+        transform: scale(1.1);
+    }
+}
+
+
 .main__extra-name-container {
     display: flex;
     gap: 0.5rem;
