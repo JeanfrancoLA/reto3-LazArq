@@ -140,6 +140,8 @@
 
 /*ESTILOS MAIN-PRESENTACION*/
 
+
+/* presentacion */
 .main__presentation-background {
     background-size: cover;
     background-image: url("/img/portada.jpg");
@@ -201,4 +203,48 @@
 .main__presentation-contacto-link:hover {
     border: 0.1rem solid var(--color-text-light);
     background-color: var(--color-text-light);
+}
+
+
+
+
+
+
+
+/* servicios */
+
+.main__services-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 0 3rem;
+    list-style: none;
+    text-align: center;
+
+}
+
+.main__services-item {
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: 0 0 0 0.15rem var(--color-text-dark), 0 0 0 0.25rem var(--color-text-dark);
+}
+
+.main__services-item:hover {
+    box-shadow: 0 0 0 0.25rem var(--color-text-light), 0 0 0 0.5rem var(--color-text-ultralight);
+}
+
+.--icon {
+    font-size: 2.5rem;
+    color: var(--color-text-light);
+}
+
+.main__services-subtitle {
+    font-size: 2.25rem;
+    font-family: var(--text-type);
+}
+
+.main__services-description {
+    font-size: 1rem;
+    font-weight: 300;
 }
