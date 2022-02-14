@@ -142,6 +142,7 @@
 
 
 /* presentacion */
+
 .main__presentation-background {
     background-size: cover;
     background-image: url("/img/portada.jpg");
@@ -248,3 +249,40 @@
     font-size: 1rem;
     font-weight: 300;
 }
+
+
+
+
+
+
+/* catalogo */
+
+
+.main__catalogue-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 3rem;
+    animation: 5seg;
+}
+
+.--imgphoto {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.main__catalogue-photography11 {
+    grid-column: -3/-1;
+}
+
+.main__catalogue-container>div :hover {
+    transform: scale(1, 1.1);
+    box-shadow: 0 0 0.5rem var(--color-text-light) ;
+}
+
+.--secundaryphotos {
+    display: none;
+}
+
+
