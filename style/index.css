@@ -115,3 +115,90 @@
     color: var(--color-text-ultralight);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ESTILOS MAIN-PRESENTACION*/
+
+.main__presentation-background {
+    background-size: cover;
+    background-image: url("/img/portada.jpg");
+}
+
+.main__presentation-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(0, auto);
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--theme-color-transparent);
+
+}
+
+.main__presentation-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.main__presentation-title,
+.main__presentation-description {
+    margin: 0;
+}
+
+.main__presentation-title {
+    color: var(--color-text-ultralight);
+    font-size: 1.75rem;
+}
+
+.main__presentation-description {
+    color: var(--theme-color-light);
+    font-size: 1rem;
+}
+
+.main__presentation-img-container {
+    width: 15rem;
+}
+
+.main__presentation-img {
+    width: 100%;
+}
+
+.main__presentation-contacto-link {
+    background-color: var(--theme-color);
+    border: 0.1rem solid var(--theme-color);
+    padding: .75rem 2rem;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    color: var(--color-text-ultralight);
+    transition: all 0.5s;
+}
+
+.main__presentation-contacto-link:hover {
+    border: 0.1rem solid var(--color-text-light);
+    background-color: var(--color-text-light);
+}
