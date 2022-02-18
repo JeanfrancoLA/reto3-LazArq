@@ -2,7 +2,7 @@
     scroll-behavior: smooth;
     --theme-color: #0d0f80;
     --theme-color-light: #fff;
-    --theme-color-transparent: #1a3ba791;
+    --theme-color-transparent: #0127a391;
     --theme-color-transparent2: #6abff091;
 
     --color-text-light: #018BFF;
@@ -146,6 +146,7 @@
 .main__presentation-background {
     background-size: cover;
     background-image: url("https://i.postimg.cc/nh5HS6N8/portada.jpg");
+
 }
 
 .main__presentation-container {
@@ -156,7 +157,7 @@
     justify-items: center;
     align-items: center;
     text-align: center;
-    background-color: var(--theme-color-transparent);
+    background-image: conic-gradient(rgba(0, 109, 252, 0.4),rgba(0, 40, 219, 0.4));
 
 }
 
@@ -223,12 +224,14 @@
     list-style: none;
     text-align: center;
 
+
 }
 
 .main__services-item {
     border-radius: .5rem;
     padding: 1rem;
     box-shadow: 0 0 0 0.15rem var(--color-text-dark), 0 0 0 0.25rem var(--color-text-dark);
+    background-image: linear-gradient(var(--theme-color-transparent),var(--theme-color-transparent2));
 }
 
 .main__services-item:hover {
